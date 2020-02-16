@@ -6,10 +6,37 @@
     <description>Recent content on My New Hugo Site</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 16 Feb 2020 16:32:55 +0800</lastBuildDate>
+    <lastBuildDate>Sun, 16 Feb 2020 19:36:40 +0800</lastBuildDate>
     
 	<atom:link href="https://ReRui.github.io/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>谷歌浏览器找不到chrome_elf</title>
+      <link>https://ReRui.github.io/post/%E8%B0%B7%E6%AD%8C%E6%B5%8F%E8%A7%88%E5%99%A8%E6%89%BE%E4%B8%8D%E5%88%B0chrome_elf.dll/</link>
+      <pubDate>Sun, 16 Feb 2020 19:36:40 +0800</pubDate>
+      
+      <guid>https://ReRui.github.io/post/%E8%B0%B7%E6%AD%8C%E6%B5%8F%E8%A7%88%E5%99%A8%E6%89%BE%E4%B8%8D%E5%88%B0chrome_elf.dll/</guid>
+      <description>昨天安装了CTex，今天打开谷歌浏览器的时候，弹出了以下对话框 “由于找不到chrome_elf.dll，无法继续执行代码，重新安装程序可能会解决此问题”
+  之后我去网站上下载了chrome_elf.dll文件放在了C:\Windows\SysWOW64目录下，但是这个问题还是没有解决。
+  后来参考网上的博客，发现可以通过修改环境变量path解决这个问题，于是便试着修改了一下，发现果然解决了。出现这个问题的原因不明，暂时认为是安装CTex的导致的。
+  解决步骤右击“此电脑”，再点击“属性”，之后点击左侧的“高级系统设置”点击“环境变量”，在系统变量中找到变量path往path里面添加值，使它能够找到chrome_elf.dll文件，记得要用分号“;”来分割不同的值。 我的chrome_elf.dll目录是C:\Program Files (x86)\Google\Chrome\Application\64.0.3282.186
+  参考博客
+http://blog.csdn.net/qq_16568205/article/details/62898331</description>
+    </item>
+    
+    <item>
+      <title>谷歌浏览器找不到chrome_elf</title>
+      <link>https://ReRui.github.io/%E8%B0%B7%E6%AD%8C%E6%B5%8F%E8%A7%88%E5%99%A8%E6%89%BE%E4%B8%8D%E5%88%B0chrome_elf.dll/%E8%B0%B7%E6%AD%8C%E6%B5%8F%E8%A7%88%E5%99%A8%E6%89%BE%E4%B8%8D%E5%88%B0chrome_elf.dll/</link>
+      <pubDate>Sun, 16 Feb 2020 19:36:40 +0800</pubDate>
+      
+      <guid>https://ReRui.github.io/%E8%B0%B7%E6%AD%8C%E6%B5%8F%E8%A7%88%E5%99%A8%E6%89%BE%E4%B8%8D%E5%88%B0chrome_elf.dll/%E8%B0%B7%E6%AD%8C%E6%B5%8F%E8%A7%88%E5%99%A8%E6%89%BE%E4%B8%8D%E5%88%B0chrome_elf.dll/</guid>
+      <description>昨天安装了CTex，今天打开谷歌浏览器的时候，弹出了以下对话框 “由于找不到chrome_elf.dll，无法继续执行代码，重新安装程序可能会解决此问题”   之后我去网站上下载了chrome_elf.dll文件放在了C:\Windows\SysWOW64目录下，但是这个问题还是没有解决。
+  后来参考网上的博客，发现可以通过修改环境变量path解决这个问题，于是便试着修改了一下，发现果然解决了。出现这个问题的原因不明，暂时认为是安装CTex的导致的。
+  解决步骤右击“此电脑”，再点击“属性”，之后点击左侧的“高级系统设置”点击“环境变量”，在系统变量中找到变量path往path里面添加值，使它能够找到chrome_elf.dll文件，记得要用分号“;”来分割不同的值。 我的chrome_elf.dll目录是C:\Program Files (x86)\Google\Chrome\Application\64.0.3282.186
+  参考博客
+http://blog.csdn.net/qq_16568205/article/details/62898331</description>
+    </item>
     
     <item>
       <title>Hugo&#43;Gihub搭建个人博客（Windows）</title>
@@ -17,7 +44,8 @@
       <pubDate>Sun, 16 Feb 2020 16:32:55 +0800</pubDate>
       
       <guid>https://ReRui.github.io/post/hugo&#43;gihub%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2windows/</guid>
-      <description>  GitHub
+      <description>参考B站Up主程序羊的视频搭建个人博客
+  GitHub
 首先，你得访问https://github.com/，注册一个GitHub账号，
 然后你得创建一个项目，项目名称为：【你的username】.gtihub.io（注意访问权限是public）。
   hugo安装
@@ -25,19 +53,14 @@
 因为我使用的是Windows，所以我下载了一个安装包，将其解压，并将其添加到环境变量中。
 环境变量的操作过程如下：右击我的电脑-&amp;gt;属性-&amp;gt;高级系统设置-&amp;gt;环境变量-&amp;gt;在path中添加含有hugo.exe的路径。
   本地创建
-使用命令 hugo new site myblog创建一个blog文件夹。
-使用命令hugo server -t m10c &amp;ndash;buildDrafts 在本地启动。
-使用命令hugo new post/blog.md创建博客
+使用命令 hugo new site myblog 创建一个blog文件夹。
+使用命令 hugo server -t m10c --buildDrafts 在本地启动。
+使用命令 hugo new post/博客名称.md 创建博客
   将本地添加到GitHub
 使用命令hugo &amp;ndash;theme=m10c &amp;ndash;baseUrl=&amp;quot;https://ReRui.github.io/&amp;rdquo; &amp;ndash;buildDrafts来发布博客。
 上条命令创建public文件夹。然后将public文件夹上传至GitHub仓库。
-git init
-git add -A
-git commit -m &amp;ldquo;first&amp;rdquo;
-git remote add origin https://github.com/ReRui/ReRui.github.io.git
-git push -u origin master（可能要输入账号密码）
-  访问【你的username】.github.io
-  </description>
+   git init git add -A git commit -m &amp;quot;first&amp;quot; git remote add origin https://github.com/ReRui/ReRui.github.io.git git push -u origin master（可能要输入账号密码） 访问【你的username】.github.io  参考视频
+https://www.bilibili.com/video/av51574688/?spm_id_from=333.788.videocard.0</description>
     </item>
     
   </channel>
