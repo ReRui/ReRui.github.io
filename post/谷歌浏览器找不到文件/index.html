@@ -66,22 +66,22 @@ http://blog.csdn.net/qq_16568205/article/details/62898331" />
 <li>昨天安装了CTex，今天打开谷歌浏览器的时候，弹出了以下对话框
 “由于找不到chrome_elf.dll，无法继续执行代码，重新安装程序可能会解决此问题”</li>
 </ol>
-<p><img src="/%E8%B0%B7%E6%AD%8C%E6%B5%8F%E8%A7%88%E5%99%A8%E6%89%BE%E4%B8%8D%E5%88%B0chrome_elf.dll/1.png" alt="1"></p>
+<p><img src="/%E8%B0%B7%E6%AD%8C%E6%B5%8F%E8%A7%88%E5%99%A8%E6%89%BE%E4%B8%8D%E5%88%B0%E6%96%87%E4%BB%B6/1.png" alt="1"></p>
 <ol start="2">
 <li>
 <p>之后我去网站上下载了chrome_elf.dll文件放在了C:\Windows\SysWOW64目录下，但是这个问题还是没有解决。</p>
-<p><img src="/%E8%B0%B7%E6%AD%8C%E6%B5%8F%E8%A7%88%E5%99%A8%E6%89%BE%E4%B8%8D%E5%88%B0chrome_elf.dll/2.png" alt="2"></p>
+<p><img src="/%E8%B0%B7%E6%AD%8C%E6%B5%8F%E8%A7%88%E5%99%A8%E6%89%BE%E4%B8%8D%E5%88%B0%E6%96%87%E4%BB%B6/2.png" alt="2"></p>
 </li>
 <li>
 <p>后来参考网上的博客，发现可以通过修改环境变量path解决这个问题，于是便试着修改了一下，发现果然解决了。出现这个问题的原因不明，暂时认为是安装CTex的导致的。</p>
-<p><img src="/%E8%B0%B7%E6%AD%8C%E6%B5%8F%E8%A7%88%E5%99%A8%E6%89%BE%E4%B8%8D%E5%88%B0chrome_elf.dll/3.png" alt="3"></p>
+<p><img src="/%E8%B0%B7%E6%AD%8C%E6%B5%8F%E8%A7%88%E5%99%A8%E6%89%BE%E4%B8%8D%E5%88%B0%E6%96%87%E4%BB%B6/3.png" alt="3"></p>
 </li>
 <li>
 <p>解决步骤右击“此电脑”，再点击“属性”，之后点击左侧的“高级系统设置”点击“环境变量”，在系统变量中找到变量path往path里面添加值，使它能够找到chrome_elf.dll文件，记得要用分号“;”来分割不同的值。
 我的chrome_elf.dll目录是C:\Program Files (x86)\Google\Chrome\Application\64.0.3282.186</p>
 </li>
 </ol>
-<p><img src="/%E8%B0%B7%E6%AD%8C%E6%B5%8F%E8%A7%88%E5%99%A8%E6%89%BE%E4%B8%8D%E5%88%B0chrome_elf.dll/4.png" alt="4"></p>
+<p><img src="/%E8%B0%B7%E6%AD%8C%E6%B5%8F%E8%A7%88%E5%99%A8%E6%89%BE%E4%B8%8D%E5%88%B0%E6%96%87%E4%BB%B6/4.png" alt="4"></p>
 <p>参考博客</p>
 <p><a href="http://blog.csdn.net/qq_16568205/article/details/62898331">http://blog.csdn.net/qq_16568205/article/details/62898331</a></p>
 
