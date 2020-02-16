@@ -12,15 +12,32 @@
     
     
     <item>
-      <title>Blog</title>
+      <title>Hugo&#43;Gihub搭建个人博客（Windows）</title>
       <link>https://ReRui.github.io/post/blog/</link>
       <pubDate>Sun, 16 Feb 2020 16:32:55 +0800</pubDate>
       
       <guid>https://ReRui.github.io/post/blog/</guid>
-      <description>发布博客的命令
-hugo &amp;ndash;theme=m10c &amp;ndash;baseUrl=&amp;quot;https://ReRui.github.io/&amp;rdquo; &amp;ndash;buildDrafts
-创建public文件夹。
-然后将public文件夹上传至GitHub仓库。</description>
+      <description>  GitHub
+首先，你得访问https://github.com/，注册一个GitHub账号，
+然后你得创建一个项目，项目名称为：【你的username】.gtihub.io（注意访问权限是public）。
+  hugo安装
+在GitHub上https://github.com/gohugoio/hugo找到hugo最新版本，进行下载。
+因为我使用的是Windows，所以我下载了一个安装包，将其解压，并将其添加到环境变量中。
+环境变量的操作过程如下：右击我的电脑-&amp;gt;属性-&amp;gt;高级系统设置-&amp;gt;环境变量-&amp;gt;在path中添加含有hugo.exe的路径。
+  本地创建
+使用命令 hugo new site myblog创建一个blog文件夹。
+使用命令hugo server -t m10c &amp;ndash;buildDrafts 在本地启动。
+使用命令hugo new post/blog.md创建博客
+  将本地添加到GitHub
+使用命令hugo &amp;ndash;theme=m10c &amp;ndash;baseUrl=&amp;quot;https://ReRui.github.io/&amp;rdquo; &amp;ndash;buildDrafts来发布博客。
+上条命令创建public文件夹。然后将public文件夹上传至GitHub仓库。
+git init
+git add -A
+git commit -m &amp;ldquo;first&amp;rdquo;
+git remote add origin https://github.com/ReRui/ReRui.github.io.git
+git push -u origin master（可能要输入账号密码）
+  访问【你的username】.github.io
+  </description>
     </item>
     
   </channel>
