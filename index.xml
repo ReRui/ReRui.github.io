@@ -13,10 +13,10 @@
     
     <item>
       <title>Hugo&#43;Gihub搭建个人博客（Windows）</title>
-      <link>https://ReRui.github.io/post/blog/</link>
+      <link>https://ReRui.github.io/post/hugo&#43;gihub%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2windows/</link>
       <pubDate>Sun, 16 Feb 2020 16:32:55 +0800</pubDate>
       
-      <guid>https://ReRui.github.io/post/blog/</guid>
+      <guid>https://ReRui.github.io/post/hugo&#43;gihub%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2windows/</guid>
       <description>  GitHub
 首先，你得访问https://github.com/，注册一个GitHub账号，
 然后你得创建一个项目，项目名称为：【你的username】.gtihub.io（注意访问权限是public）。
